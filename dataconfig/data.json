@@ -1,7 +1,15 @@
 {
   "user": {
-    "username" : "zhouangou",
+    "userName" : "zhouangou",
     "password" : "111111"
+  },
+  "headers" : {
+        "ck": "example",
+        "v": "1.0.0",
+        "dt": "ios"
+    },
+  "id": {
+    "id": "3"
   },
   "token" : {
     "token" : ""

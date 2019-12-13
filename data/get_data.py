@@ -24,13 +24,13 @@ class GetData:
             flag = False
         return flag
 
-    def is_header(self, row):
+    def is_headers(self, row):
         """
         是否携带header
         :param row: 行号
         :return:
         """
-        col = int(data_config.get_header())
+        col = int(data_config.get_headers())
         header = self.opera_excel.get_cell_value(row, col)
         if header != '':
             return header

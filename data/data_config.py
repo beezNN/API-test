@@ -4,7 +4,7 @@ class global_val:
     url = '2'
     run = '3'
     request_way = '4'
-    header = '5'
+    headers = '5'
     case_depend = '6'
     data_depend = '7'
     field_depend = '8'
@@ -38,9 +38,9 @@ def get_run_way():
     return global_val.request_way
 
 
-def get_header():
+def get_headers():
     """获取是否携带header"""
-    return global_val.header
+    return global_val.headers
 
 
 def get_case_depend():

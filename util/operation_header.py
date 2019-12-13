@@ -12,7 +12,7 @@ class OperationHeader:
         '''
         获取登录返回的token
         '''
-        token = {"data": {"token": self.response['data']['token']}}
+        token = {"data": {"token": self.response["data"]["token"]}}
 
         return token
 
@@ -22,14 +22,20 @@ class OperationHeader:
 
 
 if __name__ == '__main__':
-    url = "http://192.168.30.77:8031/v3/login/user"
 
+    url = "http://192.168.30.77:8031/v3/login/user"
+    headers = {
+        'ck': 'example',
+        'v': '1.0.0',
+        'dt': 'ios',
+    }
     data = {
-        "username": "zhouangou",
+        "userName": "zhouangou",
         "password": "111111"
     }
+
     run_method = RunMethod()
     # res = json.dumps(requests.post(url, data).json())
-    res = run_method.run_main('Post', url, data)
+    res = run_method.run_main('POST', url, data)
     op = OperationHeader(res)
     op.write_token()

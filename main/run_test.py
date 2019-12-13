@@ -30,7 +30,7 @@ class RunTest:
                 method = self.data.get_request_method(i)
                 request_data = self.data.get_data_for_json(i)
                 expect = self.data.get_expcet_data(i)
-                header = self.data.is_header(i)
+                headers = self.data.is_headers(i)
                 depend_case = self.data.is_depend(i)
 
                 if depend_case != None:
@@ -42,11 +42,11 @@ class RunTest:
                     # 更新请求字段
                     request_data[depend_key] = depend_response_data
                 # 如果header字段值为write则将该接口的返回的token写入到token.json文件，如果为yes则读取token.json文件
-                if header == "write":
+                if headers == "write":
                     res = self.run_method.run_main(method, url, request_data)
-                    op_header = OperationHeader(res)
-                    op_header.write_token()
-                elif header == 'yes':
+                    op_headers = OperationHeader(res)
+                    op_headers.write_token()
+                elif headers == 'yes':
                     op_json = OperationJson("D:/pycharm/API-test/dataconfig/token.json")
                     token = op_json.get_data('data')
                     request_data = dict(request_data, **token)  # 把请求数据与登录token合并，并作为请求数据
