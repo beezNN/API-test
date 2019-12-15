@@ -1,3 +1,7 @@
+"""
+主运行程序
+"""
+
 from base.runmethond import RunMethod
 from data.get_data import GetData
 from util.common_util import CommonUtil

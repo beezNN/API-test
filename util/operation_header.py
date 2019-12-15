@@ -1,3 +1,7 @@
+"""
+实时获取登陆token及将token写入到token.json文件中
+"""
+
 import json
 from util.operation_json import OperationJson
 from base.runmethond import RunMethod

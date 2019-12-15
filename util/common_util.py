@@ -1,3 +1,7 @@
+"""
+用于断言
+"""
+
 class CommonUtil:
   def is_contain(self, str_one, str_two):
     """

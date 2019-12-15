@@ -1,3 +1,7 @@
+"""
+获取excel模块中的数据
+"""
+
 class global_val:
     Id = '0'
     request_name = '1'

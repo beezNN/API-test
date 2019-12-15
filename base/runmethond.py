@@ -1,3 +1,7 @@
+"""
+对不同的请求方式进行封装
+"""
+
 import json
 import requests
 

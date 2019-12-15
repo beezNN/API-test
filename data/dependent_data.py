@@ -1,3 +1,7 @@
+"""
+解决数据依赖问题
+"""
+
 from util.operation_excel import OperationExcel
 from base.runmethond import RunMethod
 from data.get_data import GetData
