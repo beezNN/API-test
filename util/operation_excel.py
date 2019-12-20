@@ -14,7 +14,8 @@ class OperationExcel:
             self.file_name = file_name
             self.sheet_id = sheet_id
         else:
-            self.file_name = 'D:/pycharm/API-test/dataconfig/case.xls'
+            # self.file_name = 'D:/pycharm/API-test/dataconfig/case.xls'
+            self.file_name = 'F:/API-test/dataconfig/case.xls'
             self.sheet_id = 0
         self.data = self.get_data()
 

@@ -9,7 +9,7 @@ requests.packages.urllib3.disable_warnings()
 
 
 class RunMethod:
-    def post_main(self, url, data, headers=None):
+    def post_main(self, url, data=None, headers=None):
         res = None
         if headers != None:
             res = requests.post(url=url, data=data, headers=headers, verify=False)
@@ -40,7 +40,8 @@ if __name__ == '__main__':
         'v': '1.0.0',
         'dt': 'ios',
     }
-    url = 'http://192.168.30.77:8031/v3/login/user'
+    # url = 'http://192.168.30.77:8031/v3/login/user'
+    url = 'http://xsapi.ynmfz.com/v2/user/login'
     data = {
         "userName": "zhouangou",
         "password": "111111"

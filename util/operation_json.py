@@ -10,7 +10,8 @@ class OperationJson:
 
     def __init__(self, file_path=None):
         if file_path == None:
-            self.file_path = "D:/pycharm/API-test/dataconfig/data.json"
+            # self.file_path = "D:/pycharm/API-test/dataconfig/data.json"
+            self.file_path = "F:/API-test/dataconfig/data.json"
         else:
             self.file_path = file_path
         self.data = self.read_data()
@@ -31,8 +32,9 @@ class OperationJson:
 
     # 写入json
     def write_data(self, data):
-        with open("D:/pycharm/API-test/dataconfig/token.json", 'w+b') as fp:
-            fp.write(json.dumps(data).encode())
+        with open("F:/API-test/dataconfig/token.json", 'w+b') as fp:
+            # with open("D:/pycharm/API-test/dataconfig/token.json", 'w+b') as fp:
+         fp.write(json.dumps(data).encode())
 
 
 if __name__ == '__main__':
