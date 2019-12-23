@@ -26,13 +26,10 @@ class OperationHeader:
 
 
 if __name__ == '__main__':
+
     # url = "http://192.168.30.77:8031/v3/login/user"
     url = 'http://xsapi.ynmfz.com/v2/user/login'
-    # headers = {
-    #     'ck': 'example',
-    #     'v': '1.0.0',
-    #     'dt': 'ios',
-    # }
+
     data = {
         "userName": "zhouangou",
         "password": "111111"

@@ -35,6 +35,7 @@ class RunMethod:
 
 
 if __name__ == '__main__':
+    # 测试版本
     headers = {
         'ck': 'example',
         'v': '1.0.0',
@@ -46,6 +47,7 @@ if __name__ == '__main__':
         "userName": "zhouangou",
         "password": "111111"
     }
+
 
     run = RunMethod()
     run_test = run.run_main(method="POST", url=url, data=data)

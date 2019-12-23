@@ -52,7 +52,8 @@ class RunTest:
                     op_headers = OperationHeader(res)
                     op_headers.write_token()
                 elif headers == 'yes':
-                    op_json = OperationJson("F:/API-test/dataconfig/token.json")
+                    # op_json = OperationJson("F:/API-test/dataconfig/token.json")
+                    op_json = OperationJson("/Users/zhongwei/PycharmProjects/API-test/dataconfig/token.json")
                     token = op_json.get_data('data')
                     request_data = dict(request_data, **token)  # 把请求数据与登录token合并，并作为请求数据
 

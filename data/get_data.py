@@ -13,6 +13,7 @@ class GetData:
     def __init__(self):
         self.opera_excel = OperationExcel()
 
+
     def get_case_lines(self):
         """获取excel行数，即case的个数"""
         return self.opera_excel.get_lines()
